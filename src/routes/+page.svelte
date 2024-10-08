@@ -1,2 +1,2 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<h1 class="h1">Schützengesellschaft Bleienbach</h1>
+<p>Die Seite ist derzeit im Aufbau, wir freuen uns, sie 2025 präsentieren zu dürfen.</p>
