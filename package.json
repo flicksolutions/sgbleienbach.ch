@@ -40,6 +40,7 @@
 		"vite-plugin-devtools-json": "^1.0.0"
 	},
 	"dependencies": {
-		"@sveltejs/mcp": "^0.1.20"
+		"@sveltejs/mcp": "^0.1.20",
+		"maplibre-gl": "^5.18.0"
 	}
 }
