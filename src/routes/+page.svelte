@@ -14,16 +14,12 @@
 			alt="Schiessstand der Schützengesellschaft Bleienbach"
 			class="h-full w-full object-cover"
 		/>
-		<div class="absolute inset-0 bg-linear-to-t from-black/80 via-black/50 to-black/20"></div>
+		<div class="absolute inset-0 bg-linear-to-t from-white/40 via-white/20 to-white/0"></div>
 		<div
 			class="absolute inset-0 flex flex-col items-center justify-end pb-12 text-center text-white"
 		>
-			<img
-				src={logoHoch}
-				alt="Logo Schützengesellschaft Bleienbach"
-				class="mb-4 h-28 drop-shadow-lg md:h-36"
-			/>
-			<h1 class="text-4xl font-bold drop-shadow-lg md:text-5xl lg:text-6xl">
+			<img src={logoHoch} alt="Logo Schützengesellschaft Bleienbach" class="mb-4 h-32 md:h-55" />
+			<h1 class="h1 font-bold drop-shadow-lg md:text-5xl lg:text-6xl">
 				Schützengesellschaft Bleienbach
 			</h1>
 			<p class="mt-3 text-lg font-light tracking-wide drop-shadow md:text-xl">
