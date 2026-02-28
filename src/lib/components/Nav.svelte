@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/state';
+	import { resolve } from '$app/paths';
 	import logoQuer from '$lib/assets/Logo_SchuetzenBleienbach_rgb_quer_Web.svg';
 
 	let uebUnsMobileOpen = $state(false);
@@ -7,15 +8,15 @@
 	let mobileMenuOpen = $state(false);
 
 	const uebUnsLinks = [
-		{ href: '/ueber-uns/geschichte', label: 'Geschichte' },
-		{ href: '/ueber-uns/vorstand', label: 'Vorstand' },
-		{ href: '/ueber-uns/anfahrt', label: 'Anfahrt' }
+		{ href: resolve('/ueber-uns/geschichte'), label: 'Geschichte' },
+		{ href: resolve('/ueber-uns/vorstand'), label: 'Vorstand' },
+		{ href: resolve('/ueber-uns/anfahrt'), label: 'Anfahrt' }
 	];
 
 	const schuetzenLinks = [
-		{ href: '/infos#jahresprogramm', label: 'Jahresprogramm' },
-		{ href: '/infos#ranglisten', label: 'Ranglisten' },
-		{ href: '/infos#linksammlung', label: 'Linksammlung' }
+		{ href: resolve('/infos#jahresprogramm'), label: 'Jahresprogramm' },
+		{ href: resolve('/infos#ranglisten'), label: 'Ranglisten' },
+		{ href: resolve('/infos#linksammlung'), label: 'Linksammlung' }
 	];
 
 	function isActive(href: string) {
@@ -27,7 +28,7 @@
 	<div class="mx-auto max-w-7xl px-4">
 		<div class="flex h-14 items-center justify-between">
 			<!-- Logo / Club name -->
-			<a href="/" class="flex items-center gap-2 hover:opacity-80">
+			<a href={resolve('/')} class="flex items-center gap-2 hover:opacity-80">
 				<img src={logoQuer} alt="SG Bleienbach" class="h-10" />
 			</a>
 
@@ -35,18 +36,18 @@
 			<ul class="hidden items-center gap-1 md:flex">
 				<li>
 					<a
-						href="/"
+						href={resolve('/')}
 						class="rounded px-3 py-2 text-sm font-medium transition-colors hover:bg-primary-600"
-						class:bg-primary-900={isActive('/')}
+						class:bg-primary-900={isActive(resolve('/'))}
 					>
 						Home
 					</a>
 				</li>
 				<li>
 					<a
-						href="/news"
+						href={resolve('/news')}
 						class="rounded px-3 py-2 text-sm font-medium transition-colors hover:bg-primary-600"
-						class:bg-primary-900={isActive('/news')}
+						class:bg-primary-900={isActive(resolve('/news'))}
 					>
 						News
 					</a>
@@ -56,7 +57,7 @@
 				<li class="group relative">
 					<button
 						class="flex items-center gap-1 rounded px-3 py-2 text-sm font-medium transition-colors hover:bg-primary-600"
-						class:bg-primary-900={isActive('/ueber-uns')}
+						class:bg-primary-900={isActive(resolve('/ueber-uns'))}
 					>
 						Über uns
 						<svg class="h-3 w-3 transition-transform group-hover:rotate-180" viewBox="0 0 10 6" fill="currentColor">
@@ -81,7 +82,7 @@
 				<li class="group relative">
 					<button
 						class="flex items-center gap-1 rounded px-3 py-2 text-sm font-medium transition-colors hover:bg-primary-600"
-						class:bg-primary-900={isActive('/infos')}
+						class:bg-primary-900={isActive(resolve('/infos'))}
 					>
 						Aktuelle Infos
 						<svg class="h-3 w-3 transition-transform group-hover:rotate-180" viewBox="0 0 10 6" fill="currentColor">
@@ -123,10 +124,10 @@
 		{#if mobileMenuOpen}
 			<ul class="border-t border-primary-600 pb-3 pt-2 md:hidden">
 				<li>
-					<a href="/" class="block px-4 py-2 text-sm hover:bg-primary-600">Home</a>
+					<a href={resolve('/')} class="block px-4 py-2 text-sm hover:bg-primary-600">Home</a>
 				</li>
 				<li>
-					<a href="/news" class="block px-4 py-2 text-sm hover:bg-primary-600">News</a>
+					<a href={resolve('/news')} class="block px-4 py-2 text-sm hover:bg-primary-600">News</a>
 				</li>
 				<li>
 					<button

@@ -1,7 +1,11 @@
+<script>
+	import { resolve } from '$app/paths';
+</script>
+
 # Über uns
 
 Erfahren Sie mehr über unseren Verein.
 
-- [Geschichte](/ueber-uns/geschichte)
-- [Vorstand](/ueber-uns/vorstand)
-- [Anfahrt](/ueber-uns/anfahrt)
+- <a href={resolve('/ueber-uns/geschichte')}>Geschichte</a>
+- <a href={resolve('/ueber-uns/vorstand')}>Vorstand</a>
+- <a href={resolve('/ueber-uns/anfahrt')}>Anfahrt</a>
