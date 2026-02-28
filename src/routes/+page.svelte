@@ -1,3 +1,7 @@
+<script lang="ts">
+	import logoHoch from '$lib/assets/Logo_SchuetzenBleienbach_rgb_hoch_Web.svg';
+</script>
+
 <svelte:head>
 	<title>SG Bleienbach – Schützengesellschaft Bleienbach</title>
 </svelte:head>
@@ -10,10 +14,15 @@
 			alt="Schiessstand der Schützengesellschaft Bleienbach"
 			class="h-full w-full object-cover"
 		/>
-		<div class="absolute inset-0 bg-linear-to-t from-black/70 via-black/30 to-transparent"></div>
+		<div class="absolute inset-0 bg-linear-to-t from-black/80 via-black/50 to-black/20"></div>
 		<div
 			class="absolute inset-0 flex flex-col items-center justify-end pb-12 text-center text-white"
 		>
+			<img
+				src={logoHoch}
+				alt="Logo Schützengesellschaft Bleienbach"
+				class="mb-4 h-28 drop-shadow-lg md:h-36"
+			/>
 			<h1 class="text-4xl font-bold drop-shadow-lg md:text-5xl lg:text-6xl">
 				Schützengesellschaft Bleienbach
 			</h1>

@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/state';
+	import logoQuer from '$lib/assets/Logo_SchuetzenBleienbach_rgb_quer_Web.svg';
 
 	let uebUnsMobileOpen = $state(false);
 	let schuetzenMobileOpen = $state(false);
@@ -26,8 +27,8 @@
 	<div class="mx-auto max-w-7xl px-4">
 		<div class="flex h-14 items-center justify-between">
 			<!-- Logo / Club name -->
-			<a href="/" class="text-lg font-bold tracking-wide hover:opacity-80">
-				SG Bleienbach
+			<a href="/" class="flex items-center gap-2 hover:opacity-80">
+				<img src={logoQuer} alt="SG Bleienbach" class="h-10" />
 			</a>
 
 			<!-- Desktop nav -->
