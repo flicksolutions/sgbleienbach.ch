@@ -1,12 +1,9 @@
 <script lang="ts">
 	import { browser } from '$app/environment';
 	import Map from '$lib/components/Map.svelte';
-
-	const GMAPS = 'https://www.google.com/maps?q=47.17936000333466,7.753527098787768';
 </script>
 
-<h1>Anfahrt</h1>
-<p>So finden Sie uns.</p>
+# Anfahrt So finden Sie uns.
 
 {#if browser}
 	<div class="my-6">
@@ -15,10 +12,10 @@
 {/if}
 
 <a
-	href={GMAPS}
+	href="https://www.google.com/maps?q=47.17936000333466,7.753527098787768"
 	target="_blank"
 	rel="noopener noreferrer"
-	class="btn preset-filled-primary-500 mt-2 inline-block"
+	class="mt-2 btn inline-block preset-filled-primary-500"
 >
 	Mit Google Maps navigieren →
 </a>

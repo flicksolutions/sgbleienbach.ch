@@ -1,0 +1,25 @@
+# Aktuelle Infos für Schützen
+
+<section id="jahresprogramm" class="mt-8">
+
+## Jahresprogramm
+
+Das aktuelle Jahresprogramm wird hier veröffentlicht.
+
+</section>
+
+<section id="ranglisten" class="mt-8">
+
+## Ranglisten
+
+Die aktuellen Ranglisten erscheinen hier.
+
+</section>
+
+<section id="linksammlung" class="mt-8">
+
+## Linksammlung
+
+Nützliche Links für Schützen.
+
+</section>
