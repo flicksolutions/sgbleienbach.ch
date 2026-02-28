@@ -1,3 +1,7 @@
+---
+layout: geschichte
+---
+
 # Geschichte
 
 1. Oktober 1893 - Gründung der Schützengesellschaft Bleienbach im Restaurant Frohburg
