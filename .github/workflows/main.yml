@@ -2,36 +2,63 @@ name: Deploy to GitHub Pages
 
 on:
     push:
-        branches: ["main"]
+        branches: ["main", "v1"]
     workflow_dispatch:
 
 jobs:
     build_site:
         runs-on: ubuntu-latest
         steps:
-            - name: Checkout
+            # Build main branch
+            - name: Checkout main
               uses: actions/checkout@v4
+              with:
+                  ref: main
 
             - name: Install pnpm
               uses: pnpm/action-setup@v4
               with:
                   version: 10
 
-            - name: Install dependencies
+            - name: Install dependencies (main)
               run: pnpm install
 
-            - name: build
+            - name: Build main
               env:
-                  # BASE_PATH: '/${{ github.event.repository.name }}'
                   BASE_PATH: ""
+                  NODE_OPTIONS: "--max_old_space_size=9000"
+              run: pnpm run build
+
+            - name: Save main build
+              run: mv build build-main
+
+            # Build v1 branch
+            - name: Checkout v1
+              uses: actions/checkout@v4
+              with:
+                  ref: v1
+                  clean: false
+
+            - name: Install dependencies (v1)
+              run: pnpm install
+
+            - name: Build v1
+              env:
+                  BASE_PATH: "/dev"
                   NODE_OPTIONS: "--max_old_space_size=9000"
               run: |
                   pnpm run build
+                  mv build build-v1
+
+            # Merge builds
+            - name: Merge builds
+              run: |
+                  mv build-main build
+                  cp -r build-v1/. build/dev/
 
             - name: Upload Artifacts
               uses: actions/upload-pages-artifact@v3
               with:
-                  # this should match the `pages` option in your adapter-static options
                   path: "build/"
 
     deploy:
