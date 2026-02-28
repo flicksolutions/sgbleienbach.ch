@@ -49,7 +49,7 @@
 		Auf einen Blick
 	</h2>
 	<div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-		{#each [{ href: '/schuetzen#jahresprogramm', title: 'Jahresprogramm', desc: 'Alle Termine und Anlässe der laufenden Saison.', icon: 'fa-calendar-days' }, { href: '/schuetzen#ranglisten', title: 'Ranglisten', desc: 'Aktuelle Resultate und Ranglisten.', icon: 'fa-trophy' }, { href: '/ueber-uns/geschichte', title: 'Geschichte', desc: 'Erfahren Sie mehr über unsere Vereinsgeschichte.', icon: 'fa-book-open' }, { href: '/ueber-uns/anfahrt', title: 'Anfahrt', desc: 'So finden Sie unseren Schiessstand.', icon: 'fa-location-dot' }] as card (card.href)}
+		{#each [{ href: '/infos#jahresprogramm', title: 'Jahresprogramm', desc: 'Alle Termine und Anlässe der laufenden Saison.', icon: 'fa-calendar-days' }, { href: '/infos#ranglisten', title: 'Ranglisten', desc: 'Aktuelle Resultate und Ranglisten.', icon: 'fa-trophy' }, { href: '/ueber-uns/geschichte', title: 'Geschichte', desc: 'Erfahren Sie mehr über unsere Vereinsgeschichte.', icon: 'fa-book-open' }, { href: '/ueber-uns/anfahrt', title: 'Anfahrt', desc: 'So finden Sie unseren Schiessstand.', icon: 'fa-location-dot' }] as card (card.href)}
 			<a
 				href={card.href}
 				class="preset-outlined-surface-50 group rounded-container-token flex flex-col items-center p-6 text-center transition-all hover:preset-filled-primary-500 hover:shadow-lg"

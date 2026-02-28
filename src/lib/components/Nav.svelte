@@ -13,9 +13,9 @@
 	];
 
 	const schuetzenLinks = [
-		{ href: '/schuetzen#jahresprogramm', label: 'Jahresprogramm' },
-		{ href: '/schuetzen#ranglisten', label: 'Ranglisten' },
-		{ href: '/schuetzen#linksammlung', label: 'Linksammlung' }
+		{ href: '/infos#jahresprogramm', label: 'Jahresprogramm' },
+		{ href: '/infos#ranglisten', label: 'Ranglisten' },
+		{ href: '/infos#linksammlung', label: 'Linksammlung' }
 	];
 
 	function isActive(href: string) {
@@ -81,7 +81,7 @@
 				<li class="group relative">
 					<button
 						class="flex items-center gap-1 rounded px-3 py-2 text-sm font-medium transition-colors hover:bg-primary-600"
-						class:bg-primary-900={isActive('/schuetzen')}
+						class:bg-primary-900={isActive('/infos')}
 					>
 						Aktuelle Infos
 						<svg class="h-3 w-3 transition-transform group-hover:rotate-180" viewBox="0 0 10 6" fill="currentColor">
