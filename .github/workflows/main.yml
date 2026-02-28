@@ -27,6 +27,7 @@ jobs:
               env:
                   BASE_PATH: ""
                   NODE_OPTIONS: "--max_old_space_size=9000"
+                  PUBLIC_MAPTILER_API_KEY: ${{ vars.PUBLIC_MAPTILER_API_KEY }}
               run: pnpm run build
 
             - name: Save main build
@@ -46,6 +47,7 @@ jobs:
               env:
                   BASE_PATH: "/dev"
                   NODE_OPTIONS: "--max_old_space_size=9000"
+                  PUBLIC_MAPTILER_API_KEY: ${{ vars.PUBLIC_MAPTILER_API_KEY }}
               run: |
                   pnpm run build
                   mv build build-v1
