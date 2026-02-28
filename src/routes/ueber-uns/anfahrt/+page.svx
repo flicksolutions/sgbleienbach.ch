@@ -6,16 +6,16 @@
 # Anfahrt So finden Sie uns.
 
 {#if browser}
-	<div class="my-6">
-		<Map />
-	</div>
+<div class="my-6">
+<Map />
+</div>
 {/if}
 
 <a
-	href="https://www.google.com/maps?q=47.17936000333466,7.753527098787768"
-	target="_blank"
-	rel="noopener noreferrer"
-	class="mt-2 btn inline-block preset-filled-primary-500"
+  href="https://www.google.com/maps?q=47.17936000333466,7.753527098787768"
+  target="_blank"
+  rel="noopener noreferrer"
+  class="mt-2 btn inline-block preset-filled-primary-500"
 >
-	Mit Google Maps navigieren →
+  Mit Google Maps navigieren →
 </a>
