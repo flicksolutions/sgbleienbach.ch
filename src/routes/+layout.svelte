@@ -1,5 +1,7 @@
 <script lang="ts">
 	import './layout.css';
+	import '@fortawesome/fontawesome-free/css/fontawesome.min.css';
+	import '@fortawesome/fontawesome-free/css/solid.min.css';
 	import favicon from '$lib/assets/favicon.svg';
 	import Nav from '$lib/components/Nav.svelte';
 
