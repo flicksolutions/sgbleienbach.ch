@@ -15,6 +15,7 @@ const config = {
 		mdsvex({
 			layout: {
 				geschichte: join(__dirname, './src/lib/layouts/Geschichte.svelte'),
+				news: join(__dirname, './src/lib/layouts/News.svelte'),
 				_: join(__dirname, './src/lib/layouts/Default.svelte')
 			}
 		})
