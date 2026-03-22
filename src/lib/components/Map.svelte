@@ -32,4 +32,9 @@
 	<link href="https://unpkg.com/maplibre-gl/dist/maplibre-gl.css" rel="stylesheet" />
 </svelte:head>
 
-<div bind:this={container} class="h-96 w-full rounded-lg shadow-md"></div>
+<div
+	bind:this={container}
+	class="h-96 w-full rounded-lg shadow-md"
+	role="img"
+	aria-label="Karte: Standort Schiessstand Bleienbach, Gässli, 3368 Bleienbach"
+></div>
