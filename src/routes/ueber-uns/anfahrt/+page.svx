@@ -3,7 +3,15 @@
 	import Map from '$lib/components/Map.svelte';
 </script>
 
-# Anfahrt So finden Sie uns.
+# Anfahrt
+
+So finden Sie uns.
+
+<enhanced:img
+	src="$lib/assets/img/haus.webp"
+	alt="Schützenhaus Bleienbach"
+	class="my-6 w-full rounded-lg shadow-md"
+/>
 
 {#if browser}
 <div class="my-6">

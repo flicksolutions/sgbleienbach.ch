@@ -4,6 +4,12 @@
 
 # Über uns
 
+<enhanced:img
+	src="$lib/assets/img/IMG20230603201932.jpg"
+	alt="Mitglieder der Schützengesellschaft Bleienbach"
+	class="my-6 w-full rounded-lg shadow-md"
+/>
+
 Erfahren Sie mehr über unseren Verein.
 
 - <a href={resolve('/ueber-uns/geschichte')}>Geschichte</a>

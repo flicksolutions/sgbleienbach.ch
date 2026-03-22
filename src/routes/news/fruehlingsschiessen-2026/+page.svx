@@ -5,6 +5,10 @@ date: "2026-03-10"
 abstract: Am 28. und 29. März findet das traditionelle Frühlingsschiessen der SG Bleienbach statt. Alle Vereinsmitglieder und Gäste sind herzlich eingeladen.
 ---
 
+<script>
+	import { Gallery, GalleryImage } from '$lib';
+</script>
+
 ## Programm
 
 Das Frühlingsschiessen markiert den Saisonstart und ist ein fester Bestandteil unseres Vereinskalenders. Wie jedes Jahr laden wir alle Schützinnen und Schützen herzlich ein, gemeinsam die neue Saison zu eröffnen.
@@ -19,6 +23,23 @@ Das Frühlingsschiessen markiert den Saisonstart und ist ein fester Bestandteil 
 - **09:00 – 12:00 Uhr**: Wettkampf Gruppenwertung
 - **12:30 Uhr**: Gemeinsames Mittagessen
 - **14:00 Uhr**: Rangverkündigung und Preisverteilung
+
+## Eindrücke vergangener Jahre
+
+<Gallery class="not-prose my-6">
+	<GalleryImage alt="Schiessen am Frühlingsschiessen">
+		<enhanced:img src="$lib/assets/img/20150626_095023.jpg" alt="Schiessen am Frühlingsschiessen" />
+	</GalleryImage>
+	<GalleryImage alt="Kameradschaft am Schiessstand">
+		<enhanced:img src="$lib/assets/img/20150626_125919.jpg" alt="Kameradschaft am Schiessstand" />
+	</GalleryImage>
+	<GalleryImage alt="Gemeinsames Beisammensein">
+		<enhanced:img src="$lib/assets/img/IMG20230602171906.jpg" alt="Gemeinsames Beisammensein" />
+	</GalleryImage>
+	<GalleryImage alt="Vereinsanlass">
+		<enhanced:img src="$lib/assets/img/IMG20230604121002.jpg" alt="Vereinsanlass" />
+	</GalleryImage>
+</Gallery>
 
 ## Anmeldung
 

@@ -1,1 +1,2 @@
-// place files you want to import through the `$lib` alias in this folder.
+export { default as Gallery } from './components/Gallery.svelte';
+export { default as GalleryImage } from './components/GalleryImage.svelte';

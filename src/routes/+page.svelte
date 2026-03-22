@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { resolve } from '$app/paths';
 	import logoHoch from '$lib/assets/Logo_SchuetzenBleienbach_rgb_hoch_Web.svg';
+	import { Gallery, GalleryImage } from '$lib';
 </script>
 
 <svelte:head>
@@ -57,6 +58,49 @@
 			</a>
 		{/each}
 	</div>
+</section>
+
+<!-- Eindrücke -->
+<section class="py-12">
+	<h2 class="mb-8 text-center text-2xl font-bold text-secondary-800 md:text-3xl">Eindrücke</h2>
+	<Gallery class="mx-auto max-w-3xl">
+		<GalleryImage alt="Schiessstand Bleienbach">
+			<enhanced:img
+				src="$lib/assets/img/haus.webp"
+				alt="Schiessstand Bleienbach"
+			/>
+		</GalleryImage>
+		<GalleryImage alt="Kameradschaft beim Schiessen">
+			<enhanced:img
+				src="$lib/assets/img/IMG20230602185756.jpg"
+				alt="Kameradschaft beim Schiessen"
+			/>
+		</GalleryImage>
+		<GalleryImage alt="Vereinsanlass der SG Bleienbach">
+			<enhanced:img
+				src="$lib/assets/img/IMG20230603105550.jpg"
+				alt="Vereinsanlass der SG Bleienbach"
+			/>
+		</GalleryImage>
+		<GalleryImage alt="Auf dem Schiessstand">
+			<enhanced:img
+				src="$lib/assets/img/IMG20230604115540.jpg"
+				alt="Auf dem Schiessstand"
+			/>
+		</GalleryImage>
+		<GalleryImage alt="Gemeinsames Essen nach dem Schiessen">
+			<enhanced:img
+				src="$lib/assets/img/IMG20230604121814.jpg"
+				alt="Gemeinsames Essen nach dem Schiessen"
+			/>
+		</GalleryImage>
+		<GalleryImage alt="Rangverkündigung">
+			<enhanced:img
+				src="$lib/assets/img/IMG20230604124658.jpg"
+				alt="Rangverkündigung"
+			/>
+		</GalleryImage>
+	</Gallery>
 </section>
 
 <!-- News Teaser -->
