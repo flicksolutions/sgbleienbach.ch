@@ -51,7 +51,7 @@
 				href={card.href}
 				class="preset-outlined-surface-50 group rounded-container-token flex flex-col items-center p-6 text-center transition-all hover:preset-filled-primary-500 hover:shadow-lg"
 			>
-				<i class="fa-solid {card.icon} text-4xl text-primary-600 group-hover:text-primary-100"></i>
+				<i class="fa-solid {card.icon} text-4xl text-primary-600 group-hover:text-primary-100" aria-hidden="true"></i>
 				<h3 class="mt-3 text-lg font-semibold">{card.title}</h3>
 				<p class="mt-1 text-sm text-surface-500 group-hover:text-primary-100">{card.desc}</p>
 			</a>
