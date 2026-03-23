@@ -1,3 +1,19 @@
 # Vorstand
 
-Der aktuelle Vorstand der Schützengesellschaft Bleienbach.
+<enhanced:img
+	src="$lib/assets/img/vorstand/vorstand.jpeg"
+	alt="aktueller Vorstand der Schützengesellschaft Bleienbach"
+	class="my-6 w-full rounded-lg shadow-md"
+/>
+
+Sie erreichen den Vorstand unter folgender Email-Adresse: [vorstand@sgbleienbach.ch](mailto:vorstand@sgbleienbach.ch)
+
+Der aktuelle Vorstand der Schützengesellschaft Bleienbach setzt sich aus folgenden Personen zusammen:
+
+- Präsident: Thomas Flückiger, [praesidium@sgbleienbach.ch](mailto:praesidium@sgbleienbach.ch)
+- Sekretär: Daniel Rickli, [sekretariat@sgbleienbach.ch](mailto:sekretariat@sgbleienbach.ch)
+- Kassier: Markus Spycher, [kasse@sgbleienbach.ch](mailto:kasse@sgbleienbach.ch)
+- Schiesssekretär: René Rossier, [schiesssekretaer@sgbleienbach.ch](mailto:schiesssekretaer@sgbleienbach.ch)
+- Anlagenwart: Sebastian Flick, [anlage@sgbleienbach.ch](mailto:anlage@sgbleienbach.ch)
+- stv. Anlagenwart: Andreas Morf
+- verantwortlicher Senioren: Alfred Spycher
