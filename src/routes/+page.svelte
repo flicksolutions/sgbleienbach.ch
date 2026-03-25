@@ -2,6 +2,7 @@
 	import { resolve } from '$app/paths';
 	import logoHoch from '$lib/assets/Logo_SchuetzenBleienbach_rgb_hoch_Web.svg';
 	import { Gallery, GalleryImage } from '$lib';
+	import { goldSponsors } from '$lib/data/sponsors';
 
 	let { data } = $props();
 </script>
@@ -142,5 +143,34 @@
 				Alle News →
 			</a>
 		</div>
+	</div>
+</section>
+
+<!-- Sponsoren Banner -->
+<section class="py-12">
+	<div class="text-center">
+		<h2 class="text-2xl font-bold text-secondary-800-200 md:text-3xl">Unsere Sponsoren</h2>
+		<p class="mx-auto mt-4 max-w-xl">
+			Wir danken unseren Gold-Sponsoren für ihre wertvolle Unterstützung.
+		</p>
+		<div
+			class="mt-8 grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] items-center gap-8 rounded-md bg-surface-50 p-2"
+		>
+			{#each goldSponsors as sponsor (sponsor.name)}
+				<a
+					href={sponsor.url ?? '#'}
+					class="flex items-center justify-center transition-opacity hover:opacity-80"
+					title={sponsor.name}
+				>
+					<img src={sponsor.logo} alt={sponsor.name} class="max-h-48 w-full object-contain" />
+				</a>
+			{/each}
+		</div>
+		<a
+			href={resolve('/sponsoring')}
+			class="mt-8 btn inline-block rounded-full preset-filled-primary-500 px-6 py-2 font-medium"
+		>
+			Alle Sponsoren →
+		</a>
 	</div>
 </section>

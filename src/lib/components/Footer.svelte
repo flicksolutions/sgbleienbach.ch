@@ -37,6 +37,11 @@
 							>Anfahrt</a
 						>
 					</li>
+					<li>
+						<a href={resolve('/sponsoring')} class="hover:text-primary-50 hover:underline"
+							>Sponsoring</a
+						>
+					</li>
 				</ul>
 			</nav>
 
