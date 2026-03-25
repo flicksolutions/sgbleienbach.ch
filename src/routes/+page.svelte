@@ -33,8 +33,8 @@
 
 <!-- Welcome -->
 <section class="py-12 text-center">
-	<h2 class="text-2xl font-bold text-secondary-800 md:text-3xl">Willkommen</h2>
-	<p class="mx-auto mt-4 max-w-2xl text-lg leading-relaxed text-surface-600">
+	<h2 class="text-2xl font-bold text-secondary-800-200 md:text-3xl">Willkommen</h2>
+	<p class="mx-auto mt-4 max-w-2xl text-lg leading-relaxed">
 		Die Schützengesellschaft Bleienbach ist ein traditionsreicher Verein im Herzen des Oberaargaus.
 		Ob erfahrene Schützin oder interessierter Neuling – bei uns sind alle willkommen. Entdecken Sie
 		unser vielseitiges Angebot und werden Sie Teil unserer Gemeinschaft.
@@ -43,7 +43,7 @@
 
 <!-- Quick Links -->
 <section class="py-8">
-	<h2 class="mb-8 text-center text-2xl font-bold text-secondary-800 md:text-3xl">
+	<h2 class="mb-8 text-center text-2xl font-bold text-secondary-800-200 md:text-3xl">
 		Auf einen Blick
 	</h2>
 	<div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -52,9 +52,12 @@
 				href={card.href}
 				class="preset-outlined-surface-50 group rounded-container-token flex flex-col items-center p-6 text-center transition-all hover:preset-filled-primary-500 hover:shadow-lg"
 			>
-				<i class="fa-solid {card.icon} text-4xl text-primary-600 group-hover:text-primary-100" aria-hidden="true"></i>
-				<h3 class="mt-3 text-lg font-semibold">{card.title}</h3>
-				<p class="mt-1 text-sm text-surface-500 group-hover:text-primary-100">{card.desc}</p>
+				<i
+					class="fa-solid {card.icon} text-4xl text-primary-600 group-hover:text-primary-100"
+					aria-hidden="true"
+				></i>
+				<h3 class="mt-3 text-lg font-semibold text-secondary-800-200">{card.title}</h3>
+				<p class="mt-1 text-sm group-hover:text-primary-100-900">{card.desc}</p>
 			</a>
 		{/each}
 	</div>
@@ -62,13 +65,10 @@
 
 <!-- Eindrücke -->
 <section class="py-12">
-	<h2 class="mb-8 text-center text-2xl font-bold text-secondary-800 md:text-3xl">Eindrücke</h2>
+	<h2 class="mb-8 text-center text-2xl font-bold text-secondary-800-200 md:text-3xl">Eindrücke</h2>
 	<Gallery class="mx-auto max-w-3xl">
 		<GalleryImage alt="Schiessstand Bleienbach">
-			<enhanced:img
-				src="$lib/assets/img/haus.webp"
-				alt="Schiessstand Bleienbach"
-			/>
+			<enhanced:img src="$lib/assets/img/haus.webp" alt="Schiessstand Bleienbach" />
 		</GalleryImage>
 		<GalleryImage alt="Kameradschaft beim Schiessen">
 			<enhanced:img
@@ -83,10 +83,7 @@
 			/>
 		</GalleryImage>
 		<GalleryImage alt="Auf dem Schiessstand">
-			<enhanced:img
-				src="$lib/assets/img/IMG20230604115540.jpg"
-				alt="Auf dem Schiessstand"
-			/>
+			<enhanced:img src="$lib/assets/img/IMG20230604115540.jpg" alt="Auf dem Schiessstand" />
 		</GalleryImage>
 		<GalleryImage alt="Gemeinsames Essen nach dem Schiessen">
 			<enhanced:img
@@ -95,10 +92,7 @@
 			/>
 		</GalleryImage>
 		<GalleryImage alt="Rangverkündigung">
-			<enhanced:img
-				src="$lib/assets/img/IMG20230604124658.jpg"
-				alt="Rangverkündigung"
-			/>
+			<enhanced:img src="$lib/assets/img/IMG20230604124658.jpg" alt="Rangverkündigung" />
 		</GalleryImage>
 	</Gallery>
 </section>
