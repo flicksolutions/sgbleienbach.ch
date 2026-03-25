@@ -8,9 +8,11 @@
 
 ## Jahresprogramm
 
-<object data={jpPdf} type="application/pdf" width="100%" height="800" class="rounded-container-token border border-surface-300">
+<div class="min-h-[800px]">
+<object data={jpPdf} type="application/pdf" width="100%" height="800" class="block rounded-container-token border border-surface-300">
   <p>Ihr Browser kann das PDF nicht anzeigen. <a href={jpPdf} download>Jahresprogramm herunterladen</a></p>
 </object>
+</div>
 
 </section>
 
