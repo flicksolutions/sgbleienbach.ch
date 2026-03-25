@@ -9,6 +9,9 @@
 </article>
 
 <style>
+	@reference "tailwindcss";
+	@reference "@skeletonlabs/skeleton";
+
 	.timeline :global(ol) {
 		list-style: none;
 		padding: 0;
@@ -44,6 +47,6 @@
 		font-size: 1.875rem;
 		font-weight: bold;
 		margin-bottom: 2rem;
-		color: var(--color-secondary-800);
+		@apply text-secondary-800-200;
 	}
 </style>
