@@ -8,7 +8,7 @@
 	<title>News – SG Bleienbach</title>
 </svelte:head>
 
-<section class="mx-auto max-w-3xl py-8">
+<section class="max-w-3x mx-auto py-8">
 	<h1 class="mb-8 text-3xl font-bold text-secondary-800">Neuigkeiten</h1>
 
 	{#if data.articles.length === 0}
@@ -17,7 +17,7 @@
 		<div class="space-y-6">
 			{#each data.articles as article (article.slug)}
 				<a
-					href={resolve(`/news/${article.slug}`)}
+					href={resolve(`/news/${article.slug}` as any)}
 					class="preset-outlined-surface-50 rounded-container-token block p-6 transition-all hover:shadow-lg"
 				>
 					<p class="text-sm font-medium text-surface-500">

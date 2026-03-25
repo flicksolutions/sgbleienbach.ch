@@ -2,6 +2,8 @@
 	import { resolve } from '$app/paths';
 	import logoHoch from '$lib/assets/Logo_SchuetzenBleienbach_rgb_hoch_Web.svg';
 	import { Gallery, GalleryImage } from '$lib';
+
+	let { data } = $props();
 </script>
 
 <svelte:head>
@@ -98,18 +100,47 @@
 </section>
 
 <!-- News Teaser -->
-<section class="py-12">
-	<div class="rounded-container-token bg-surface-100 p-8 text-center">
-		<h2 class="text-2xl font-bold text-secondary-800 md:text-3xl">Neuigkeiten</h2>
-		<p class="mx-auto mt-4 max-w-xl text-surface-600">
+<section class=" py-12">
+	<div class="mx-auto max-w-3xl">
+		<h2 class="text-center text-2xl font-bold text-secondary-800-200 md:text-3xl">Neuigkeiten</h2>
+		<p class="mx-auto mt-4 max-w-xl text-center">
 			Bleiben Sie auf dem Laufenden über Vereinsaktivitäten, Wettkampfresultate und kommende
 			Anlässe.
 		</p>
-		<a
-			href={resolve('/news')}
-			class="mt-6 btn inline-block rounded-full preset-filled-primary-500 px-6 py-2 font-medium"
-		>
-			Alle News →
-		</a>
+
+		{#if data.latestNews.length > 0}
+			<div class="mt-8 space-y-6">
+				{#each data.latestNews as article (article.slug)}
+					<a
+						href={resolve(`/news/${article.slug}` as any)}
+						class="preset-outlined-surface-50 rounded-container-token group block p-6 transition-all hover:preset-filled-primary-500 hover:shadow-lg"
+					>
+						<p class="text-sm font-medium">
+							{new Date(article.date).toLocaleDateString('de-CH', {
+								year: 'numeric',
+								month: 'long',
+								day: 'numeric'
+							})}
+						</p>
+						<h3 class="mt-1 text-xl font-semibold text-secondary-800-200">{article.title}</h3>
+						<p class="mt-2">{article.abstract}</p>
+						<span
+							class="mt-3 inline-block text-sm font-medium text-primary-600-400 group-hover:text-primary-contrast-500"
+						>
+							Weiterlesen →
+						</span>
+					</a>
+				{/each}
+			</div>
+		{/if}
+
+		<div class="mt-8 text-center">
+			<a
+				href={resolve('/news')}
+				class="mt-6 btn inline-block rounded-full preset-filled-primary-500 px-6 py-2 font-medium"
+			>
+				Alle News →
+			</a>
+		</div>
 	</div>
 </section>
