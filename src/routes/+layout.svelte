@@ -5,6 +5,7 @@
 	import favicon from '$lib/assets/favicon.svg';
 	import Nav from '$lib/components/Nav.svelte';
 	import Footer from '$lib/components/Footer.svelte';
+	import { page } from '$app/state';
 
 	let { children } = $props();
 </script>
@@ -21,7 +22,9 @@
 <div class="flex min-h-screen flex-col">
 	<Nav />
 	<main id="main-content" class="mx-auto w-full max-w-7xl flex-1 px-4">
-		{@render children()}
+		{#key page.url.pathname}
+			{@render children()}
+		{/key}
 	</main>
 	<Footer />
 </div>
