@@ -72,7 +72,8 @@ export const silverSponsors: Sponsor[] = [
 		logo: sumiswalderLogo,
 		url: 'https://www.sumiswalder.ch'
 	},
-	{ name: 'Oschwald AG', tier: 'silver', logo: oschwaldLogo, url: 'https://www.oschwald.ch' }
+	{ name: 'Oschwald AG', tier: 'silver', logo: oschwaldLogo, url: 'https://www.oschwald.ch' },
+	{ name: 'Ricardo Caceda-Suter und Familie', tier: 'silver' },
 ];
 
 export const bronzeSponsors: Sponsor[] = [
@@ -106,7 +107,6 @@ export const bronzeSponsors: Sponsor[] = [
 	{ name: 'M. Gerber AG', tier: 'bronze', url: 'https://gerbertiefbau.ch/' },
 	{ name: 'Partl Beck GmbH', tier: 'bronze', url: 'https://www.partl-beck.ch' },
 	{ name: 'René Weber', tier: 'bronze' },
-	{ name: 'Ricardo Caceda-Suter und Familie', tier: 'bronze' },
 	{
 		name: 'Schreiner Gerber beraten planen vollenden GmbH',
 		tier: 'bronze',
