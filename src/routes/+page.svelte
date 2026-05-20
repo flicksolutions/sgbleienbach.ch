@@ -1,10 +1,50 @@
 <script lang="ts">
+	import { browser } from '$app/environment';
 	import { resolve } from '$app/paths';
 	import logoHoch from '$lib/assets/Logo_SchuetzenBleienbach_rgb_hoch_Web.svg';
 	import { Gallery, GalleryImage } from '$lib';
 	import { goldSponsors } from '$lib/data/sponsors';
+	import { jahresprogrammEvents2026 } from '$lib/data/jahresprogramm';
 
 	let { data } = $props();
+
+	function todayString() {
+		const now = new Date();
+		const y = now.getFullYear();
+		const m = String(now.getMonth() + 1).padStart(2, '0');
+		const d = String(now.getDate()).padStart(2, '0');
+		return `${y}-${m}-${d}`;
+	}
+
+	let today = $state(browser ? todayString() : '');
+
+	const nextEvent = $derived(
+		browser
+			? (jahresprogrammEvents2026
+					.filter((e) => !today || e.date >= today)
+					.sort((a, b) => {
+						const dc = a.date.localeCompare(b.date);
+						return dc !== 0 ? dc : (a.start ?? '').localeCompare(b.start ?? '');
+					})[0] ?? null)
+			: null
+	);
+
+	function formatEventDate(date: string) {
+		const [y, m, d] = date.split('-').map(Number);
+		return new Intl.DateTimeFormat('de-CH', {
+			weekday: 'long',
+			day: '2-digit',
+			month: 'long',
+			year: 'numeric',
+			timeZone: 'Europe/Zurich'
+		}).format(new Date(Date.UTC(y, m - 1, d, 12)));
+	}
+
+	function formatTime(event: typeof nextEvent) {
+		if (!event?.start) return null;
+		const from = event.start.replace(':', '.');
+		return event.end ? `${from}–${event.end.replace(':', '.')} Uhr` : `${from} Uhr`;
+	}
 </script>
 
 <svelte:head>
@@ -33,6 +73,49 @@
 		</div>
 	</div>
 </section>
+
+<!-- Nächster Termin -->
+{#if nextEvent}
+	<section class="py-4">
+		<a
+			href={resolve('/infos#jahresprogramm')}
+			class="preset-outlined-surface-50 rounded-container-token group flex flex-col gap-1 p-5 transition-all hover:preset-filled-primary-500 hover:shadow-lg sm:flex-row sm:items-center sm:justify-between"
+		>
+			<div class="flex items-center gap-3">
+				<i
+					class="fa-solid fa-calendar-days text-2xl text-primary-600 group-hover:text-primary-100-900"
+					aria-hidden="true"
+				></i>
+				<div>
+					<p
+						class="text-xs font-semibold tracking-widest text-surface-600-400 uppercase group-hover:text-primary-100-900"
+					>
+						Nächster Termin
+					</p>
+					<p
+						class="group-hover: font-semibold text-surface-900-100 group-hover:text-secondary-800-200"
+					>
+						{nextEvent.category}
+					</p>
+					{#if nextEvent.note}
+						<p class="text-sm text-surface-700-300 group-hover:text-primary-100-900">
+							{nextEvent.note}
+						</p>
+					{/if}
+				</div>
+			</div>
+			<div
+				class="pl-9 text-sm text-surface-700-300 group-hover:text-primary-100-900 sm:pl-0 sm:text-right"
+			>
+				<p>{formatEventDate(nextEvent.date)}</p>
+				{#if formatTime(nextEvent)}
+					<p>{formatTime(nextEvent)}</p>
+				{/if}
+				<p>{nextEvent.location}</p>
+			</div>
+		</a>
+	</section>
+{/if}
 
 <!-- Welcome -->
 <section class="py-12 text-center">

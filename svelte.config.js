@@ -34,6 +34,9 @@ const config = {
 			handleUnseenRoutes: 'warn' //remove this for production
 		}
 	},
+	vitePlugin: {
+		inspector: true
+	},
 	extensions: ['.svelte', '.svx']
 };
 
