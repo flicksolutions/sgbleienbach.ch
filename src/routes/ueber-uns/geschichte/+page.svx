@@ -14,4 +14,4 @@ layout: geschichte
 8. 1985 - Einbau Schallisolation und Einbau des Schützenstübli
 9. 1999 - Einbau der elektronischen Schiessanlage und Reduktion der Scheiben auf 5
 10. 2018 - Einbau der Kugelfangkästen
-11. 2025 - Erneuerung der Kugelfangkästen
+11. 2025 - Erneuerung der elektronischen Schiessanlage
