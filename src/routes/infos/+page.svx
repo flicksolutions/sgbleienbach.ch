@@ -1,5 +1,7 @@
 <script>
   import jpPdf from '$lib/assets/JP_Aktive_2026.pdf';
+  import JahresprogrammList from '$lib/components/JahresprogrammList.svelte';
+  import JahreskonkurrenzChecklist from '$lib/components/JahreskonkurrenzChecklist.svelte';
 </script>
 
 # Aktuelle Infos für Schützen
@@ -8,11 +10,29 @@
 
 ## Jahresprogramm
 
+<JahresprogrammList />
+
+<p class="mt-4 text-sm text-surface-700-300">
+  Das volle Programm als PDF:
+</p>
+
 <div class="min-h-[800px]">
-<object data={jpPdf} type="application/pdf" width="100%" height="800" class="block rounded-container-token border border-surface-300">
+<object data={jpPdf} type="application/pdf" width="100%" height="800" title="Jahresprogramm 2026 als PDF" class="block rounded-container-token border border-surface-300">
   <p>Ihr Browser kann das PDF nicht anzeigen. <a href={jpPdf} download>Jahresprogramm herunterladen</a></p>
 </object>
 </div>
+
+</section>
+
+<section id="jahreskonkurrenz" class="mt-8">
+
+## Jahreskonkurrenz
+
+<p>
+Zur Jahreskonkurrenz zählen: Obligatorische Übung, Verbandsschiessen, Feldschiessen, Bernerstich, Feldstich sowie das Sektionsresultat am Eidgenössischen Schützenfest.
+</p>
+
+<JahreskonkurrenzChecklist />
 
 </section>
 
