@@ -2,6 +2,11 @@
 layout: geschichte
 ---
 
+<svelte:head>
+  <title>Geschichte – SG Bleienbach</title>
+  <meta name="description" content="Die Geschichte der Schützengesellschaft Bleienbach – von der Gründung 1893 bis heute. Meilensteine und Entwicklung des Vereins." />
+</svelte:head>
+
 # Geschichte
 
 1. Oktober 1893 - Gründung der Schützengesellschaft Bleienbach im Restaurant Frohburg

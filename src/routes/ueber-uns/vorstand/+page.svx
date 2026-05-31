@@ -1,3 +1,8 @@
+<svelte:head>
+  <title>Vorstand – SG Bleienbach</title>
+  <meta name="description" content="Der Vorstand der Schützengesellschaft Bleienbach – Kontaktdaten und Ansprechpersonen des Vereins." />
+</svelte:head>
+
 # Vorstand
 
 Sie erreichen den Vorstand unter folgender Email-Adresse: [vorstand@sgbleienbach.ch](mailto:vorstand@sgbleienbach.ch)

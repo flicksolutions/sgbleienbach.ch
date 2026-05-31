@@ -19,6 +19,7 @@
 
 <svelte:head>
 	<title>{title} – SG Bleienbach</title>
+	<meta name="description" content={abstract} />
 </svelte:head>
 
 <article class="mx-auto prose prose-lg max-w-3xl dark:prose-invert">

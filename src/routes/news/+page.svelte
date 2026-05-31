@@ -6,6 +6,10 @@
 
 <svelte:head>
 	<title>News – SG Bleienbach</title>
+	<meta
+		name="description"
+		content="Neuigkeiten und Aktuelles aus der Schützengesellschaft Bleienbach – Berichte, Ankündigungen und Vereinsnews."
+	/>
 </svelte:head>
 
 <section class="max-w-3x mx-auto py-8">

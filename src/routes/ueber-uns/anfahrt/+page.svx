@@ -3,6 +3,11 @@
 	import Map from '$lib/components/Map.svelte';
 </script>
 
+<svelte:head>
+	<title>Anfahrt – SG Bleienbach</title>
+	<meta name="description" content="So finden Sie die Schützengesellschaft Bleienbach – Standort, Karte und Wegbeschreibung zum Schützenhaus." />
+</svelte:head>
+
 # Anfahrt
 
 So finden Sie uns.

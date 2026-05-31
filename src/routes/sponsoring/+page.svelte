@@ -4,6 +4,10 @@
 
 <svelte:head>
 	<title>Sponsoring – SG Bleienbach</title>
+	<meta
+		name="description"
+		content="Unsere Sponsoren – die Schützengesellschaft Bleienbach dankt ihren Gold-, Silber- und Bronze-Sponsoren für die grosszügige Unterstützung."
+	/>
 </svelte:head>
 
 <section class="mx-auto max-w-4xl py-8">

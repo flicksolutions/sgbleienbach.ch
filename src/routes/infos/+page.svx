@@ -5,6 +5,11 @@
   import JahreskonkurrenzChecklist from '$lib/components/JahreskonkurrenzChecklist.svelte';
 </script>
 
+<svelte:head>
+  <title>Infos – SG Bleienbach</title>
+  <meta name="description" content="Jahresprogramm, Ranglisten und nützliche Links für Schützinnen und Schützen der SG Bleienbach." />
+</svelte:head>
+
 # Aktuelle Infos für Schützen
 
 <section id="jahresprogramm" class="mt-8">

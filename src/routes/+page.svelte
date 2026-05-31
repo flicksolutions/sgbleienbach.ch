@@ -49,6 +49,10 @@
 
 <svelte:head>
 	<title>SG Bleienbach – Schützengesellschaft Bleienbach</title>
+	<meta
+		name="description"
+		content="Schützengesellschaft Bleienbach – Tradition, Präzision, Kameradschaft. Schützenverein im Oberaargau seit 1893. Aktuelles Programm, Resultate und Neuigkeiten."
+	/>
 </svelte:head>
 
 <!-- Hero (full-bleed) -->
