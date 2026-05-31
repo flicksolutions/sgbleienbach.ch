@@ -1,18 +1,8 @@
-# sv
+# Website der Schützengesellschaft Bleienbach
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+Dies ist das repo für den Auftritt der SG Bleienbach.
 
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
-
-```sh
-# create a new project in the current directory
-npx sv create
-
-# create a new project in my-app
-npx sv create my-app
-```
+In Kürze folgt hier eine Anleitung für die Bearbeitung der Website.
 
 ## Developing
 
@@ -34,5 +24,3 @@ npm run build
 ```
 
 You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
