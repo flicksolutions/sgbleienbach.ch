@@ -97,8 +97,7 @@
 	setContext('gallery', { register });
 
 	const reducedMotion =
-		typeof window !== 'undefined' &&
-		window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+		typeof window !== 'undefined' && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 	const transitionDuration = reducedMotion ? 0 : 200;
 </script>
 
@@ -143,8 +142,19 @@
 				onclick={carouselPrev}
 				aria-label="Vorheriges Bild"
 			>
-				<svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+				<svg
+					class="h-5 w-5"
+					fill="none"
+					stroke="currentColor"
+					viewBox="0 0 24 24"
+					aria-hidden="true"
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						stroke-width="2"
+						d="M15 19l-7-7 7-7"
+					/>
 				</svg>
 			</button>
 			<button
@@ -152,7 +162,13 @@
 				onclick={carouselNext}
 				aria-label="Nächstes Bild"
 			>
-				<svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+				<svg
+					class="h-5 w-5"
+					fill="none"
+					stroke="currentColor"
+					viewBox="0 0 24 24"
+					aria-hidden="true"
+				>
 					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
 				</svg>
 			</button>
@@ -176,8 +192,9 @@
 
 <!-- Lightbox overlay -->
 {#if isLightboxOpen}
+	<!-- svelte-ignore a11y_click_events_have_key_events -->
 	<div
-		class="fixed inset-0 z-[200] flex items-center justify-center bg-black/90 backdrop-blur-sm"
+		class="fixed inset-0 z-200 flex items-center justify-center bg-black/90 backdrop-blur-sm"
 		data-backdrop
 		transition:fade={{ duration: transitionDuration }}
 		onclick={handleBackdropClick}
@@ -195,7 +212,12 @@
 			aria-label="Galerie schliessen"
 		>
 			<svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+				<path
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					stroke-width="2"
+					d="M6 18L18 6M6 6l12 12"
+				/>
 			</svg>
 		</button>
 
@@ -205,8 +227,19 @@
 				onclick={lightboxPrev}
 				aria-label="Vorheriges Bild"
 			>
-				<svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+				<svg
+					class="h-6 w-6"
+					fill="none"
+					stroke="currentColor"
+					viewBox="0 0 24 24"
+					aria-hidden="true"
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						stroke-width="2"
+						d="M15 19l-7-7 7-7"
+					/>
 				</svg>
 			</button>
 			<button
@@ -214,7 +247,13 @@
 				onclick={lightboxNext}
 				aria-label="Nächstes Bild"
 			>
-				<svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+				<svg
+					class="h-6 w-6"
+					fill="none"
+					stroke="currentColor"
+					viewBox="0 0 24 24"
+					aria-hidden="true"
+				>
 					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
 				</svg>
 			</button>
@@ -234,7 +273,9 @@
 		{/key}
 
 		{#if items.length > 1}
-			<div class="absolute bottom-4 left-1/2 -translate-x-1/2 rounded-full bg-black/50 px-3 py-1 text-sm text-white">
+			<div
+				class="absolute bottom-4 left-1/2 -translate-x-1/2 rounded-full bg-black/50 px-3 py-1 text-sm text-white"
+			>
 				{lightboxIndex + 1} / {items.length}
 			</div>
 		{/if}
