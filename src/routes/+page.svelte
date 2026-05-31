@@ -122,8 +122,9 @@
 	<h2 class="text-2xl font-bold text-secondary-800-200 md:text-3xl">Willkommen</h2>
 	<p class="mx-auto mt-4 max-w-2xl text-lg leading-relaxed">
 		Die Schützengesellschaft Bleienbach ist ein traditionsreicher Verein im Herzen des Oberaargaus.
-		Ob erfahrene Schützin oder interessierter Neuling – bei uns sind alle willkommen. Entdecken Sie
-		unser vielseitiges Angebot und werden Sie Teil unserer Gemeinschaft.
+		Ob erfahrene Schützin oder interessierter Neuling – bei uns sind alle willkommen. Werden Sie
+		Teil unserer Gemeinschaft oder besuchen Sie uns unverbindlich an einem unserer öffentlichen
+		Anlässe.
 	</p>
 </section>
 
@@ -156,29 +157,23 @@
 		<GalleryImage alt="Schiessstand Bleienbach">
 			<enhanced:img src="$lib/assets/img/haus.webp" alt="Schiessstand Bleienbach" />
 		</GalleryImage>
-		<GalleryImage alt="Kameradschaft beim Schiessen">
-			<enhanced:img
-				src="$lib/assets/img/IMG20230602185756.jpg"
-				alt="Kameradschaft beim Schiessen"
-			/>
-		</GalleryImage>
-		<GalleryImage alt="Vereinsanlass der SG Bleienbach">
-			<enhanced:img
-				src="$lib/assets/img/IMG20230603105550.jpg"
-				alt="Vereinsanlass der SG Bleienbach"
-			/>
-		</GalleryImage>
 		<GalleryImage alt="Auf dem Schiessstand">
 			<enhanced:img src="$lib/assets/img/IMG20230604115540.jpg" alt="Auf dem Schiessstand" />
 		</GalleryImage>
-		<GalleryImage alt="Gemeinsames Essen nach dem Schiessen">
+		<GalleryImage alt="Sonnenuntergang über Bleienbach">
 			<enhanced:img
-				src="$lib/assets/img/IMG20230604121814.jpg"
-				alt="Gemeinsames Essen nach dem Schiessen"
+				src="$lib/assets/img/IMG20220801205748.jpg"
+				alt="Sonnenuntergang über Bleienbach"
 			/>
 		</GalleryImage>
-		<GalleryImage alt="Rangverkündigung">
-			<enhanced:img src="$lib/assets/img/IMG20230604124658.jpg" alt="Rangverkündigung" />
+		<GalleryImage alt="Sonnenuntergang über Bleienbach">
+			<enhanced:img
+				src="$lib/assets/img/WhatsApp Image 2025-12-31 at 16.24.11.jpeg"
+				alt="Sonnenuntergang über Bleienbach"
+			/>
+		</GalleryImage>
+		<GalleryImage alt="Feldschiessen">
+			<enhanced:img src="$lib/assets/img/IMG20230604123646.jpg" alt="Feldschiessen" />
 		</GalleryImage>
 	</Gallery>
 </section>
