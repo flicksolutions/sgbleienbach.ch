@@ -158,22 +158,22 @@
 			<enhanced:img src="$lib/assets/img/haus.webp" alt="Schiessstand Bleienbach" />
 		</GalleryImage>
 		<GalleryImage alt="Auf dem Schiessstand">
-			<enhanced:img src="$lib/assets/img/IMG20230604115540.jpg" alt="Auf dem Schiessstand" />
+			<enhanced:img src="$lib/assets/img/IMG20230604115540.webp" alt="Auf dem Schiessstand" />
 		</GalleryImage>
 		<GalleryImage alt="Sonnenuntergang über Bleienbach">
 			<enhanced:img
-				src="$lib/assets/img/IMG20220801205748.jpg"
+				src="$lib/assets/img/IMG20220801205748.webp"
 				alt="Sonnenuntergang über Bleienbach"
 			/>
 		</GalleryImage>
 		<GalleryImage alt="Sonnenuntergang über Bleienbach">
 			<enhanced:img
-				src="$lib/assets/img/WhatsApp Image 2025-12-31 at 16.24.11.jpeg"
+				src="$lib/assets/img/WhatsApp Image 2025-12-31 at 16.24.11.webp"
 				alt="Sonnenuntergang über Bleienbach"
 			/>
 		</GalleryImage>
 		<GalleryImage alt="Feldschiessen">
-			<enhanced:img src="$lib/assets/img/IMG20230604123646.jpg" alt="Feldschiessen" />
+			<enhanced:img src="$lib/assets/img/IMG20230604123646.webp" alt="Feldschiessen" />
 		</GalleryImage>
 	</Gallery>
 </section>
