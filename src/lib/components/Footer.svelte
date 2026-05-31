@@ -10,7 +10,7 @@
 				<h2 class="text-sm font-bold tracking-wide text-primary-50 uppercase">Kontakt</h2>
 				<address class="mt-3 space-y-1 text-sm not-italic">
 					<p>Schützengesellschaft Bleienbach</p>
-					<p>Schiessstand Gässli</p>
+					<p>Schiessstand Gässli 25a</p>
 					<p>3368 Bleienbach</p>
 				</address>
 			</div>
@@ -56,7 +56,9 @@
 		</div>
 
 		<div class="mt-8 border-t border-primary-700 pt-4 text-center text-xs text-primary-300">
-			<p>&copy; {new Date().getFullYear()} Schützengesellschaft Bleienbach. Alle Rechte vorbehalten.</p>
+			<p>
+				&copy; {new Date().getFullYear()} Schützengesellschaft Bleienbach. Alle Rechte vorbehalten.
+			</p>
 		</div>
 	</div>
 </footer>
