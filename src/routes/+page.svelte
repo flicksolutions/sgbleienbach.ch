@@ -62,6 +62,7 @@
 			src="$lib/assets/img/stand.webp"
 			alt="Schiessstand der Schützengesellschaft Bleienbach"
 			class="h-full w-full object-cover"
+			fetchpriority="high"
 		/>
 		<div class="absolute inset-0 bg-linear-to-t from-white/40 via-white/20 to-white/0"></div>
 		<div
