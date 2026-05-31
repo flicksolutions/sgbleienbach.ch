@@ -1,0 +1,29 @@
+<script lang="ts">
+	import { browser } from '$app/environment';
+	import Map from '$lib/components/Map.svelte';
+</script>
+
+# Anfahrt
+
+So finden Sie uns.
+
+<enhanced:img
+	src="$lib/assets/img/haus.webp"
+	alt="Schützenhaus Bleienbach"
+	class="my-6 w-full rounded-lg shadow-md"
+/>
+
+{#if browser}
+<div class="my-6">
+<Map />
+</div>
+{/if}
+
+<a
+  href="https://www.google.com/maps?q=47.17936000333466,7.753527098787768"
+  target="_blank"
+  rel="noopener noreferrer"
+  class="mt-2 btn inline-block preset-filled-primary-500"
+>
+  Mit Google Maps navigieren →
+</a>

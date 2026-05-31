@@ -1,0 +1,9 @@
+---
+layout: news
+title: Erste Webseite
+date: "2026-05-31"
+abstract: Die SG Bleienbach startet mit ihrer neuen Webseite in die digitale Zukunft.
+---
+
+Die SG Bleienbach hat zum ersten Mal in seiner Geschichte eine eigene Webseite. Wir werden diese in Zukunft sowohl als Informationsportal für unsere Schützen und Schützinnen als auch als Instrument, um die Öffentlichkeit zu erreichen.
+Mit der neuen Trefferanzeige, dem neuen Logo und dem schon bald eintreffendenden neuen Vereinstenue sind wir für die Zukunft gerüstet.
