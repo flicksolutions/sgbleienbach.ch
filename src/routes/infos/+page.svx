@@ -1,5 +1,6 @@
 <script>
   import jpPdf from '$lib/assets/JP_Aktive_2026.pdf';
+  import FS2026 from '$lib/assets/ranglisten/FS2026.pdf';
   import JahresprogrammList from '$lib/components/JahresprogrammList.svelte';
   import JahreskonkurrenzChecklist from '$lib/components/JahreskonkurrenzChecklist.svelte';
 </script>
@@ -40,7 +41,7 @@ Zur Jahreskonkurrenz zählen: Obligatorische Übung, Verbandsschiessen, Feldschi
 
 ## Ranglisten
 
-Die aktuellen Ranglisten erscheinen hier.
+- [Feldschiessen 2026 in Oberönz]({FS2026})
 
 </section>
 
