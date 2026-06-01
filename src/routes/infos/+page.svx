@@ -1,6 +1,6 @@
 <script>
   import jpPdf from '$lib/assets/JP_Aktive_2026.pdf';
-  import FS2026 from '$lib/assets/ranglisten/FS2026.pdf';
+  import FS2026 from '$lib/assets/ranglisten/FS2026.pdf?url';
   import JahresprogrammList from '$lib/components/JahresprogrammList.svelte';
   import JahreskonkurrenzChecklist from '$lib/components/JahreskonkurrenzChecklist.svelte';
 </script>
