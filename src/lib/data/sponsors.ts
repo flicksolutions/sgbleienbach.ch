@@ -1,15 +1,15 @@
 // Gold sponsor logos
-import flueckigerLogo from '$lib/assets/sponsoren/gold/Flueckiger.png';
+import flueckigerLogo from '$lib/assets/sponsoren/gold/Flueckiger.png?enhanced';
 import fuxsarbachLogo from '$lib/assets/sponsoren/gold/fuxsarbach.svg';
 import daetwylerLogo from '$lib/assets/sponsoren/gold/Zeichenfläche 1.svg';
-import schaerLogo from '$lib/assets/sponsoren/gold/Zeichenfläche 1.webp';
+import schaerLogo from '$lib/assets/sponsoren/gold/Zeichenfläche 1.webp?enhanced';
 
 // Silver sponsor logos
-import kaesespycherLogo from '$lib/assets/sponsoren/silber/Briefkopf_Kaesespycher.png';
+import kaesespycherLogo from '$lib/assets/sponsoren/silber/Briefkopf_Kaesespycher.png?enhanced';
 import elektroGygaxLogo from '$lib/assets/sponsoren/silber/Elektro_Gygax_rgb.svg';
 import emchLogo from '$lib/assets/sponsoren/silber/emch_bildmarke_cmyk.svg';
 import reinmannLogo from '$lib/assets/sponsoren/silber/Reinmann.svg';
-import sumiswalderLogo from '$lib/assets/sponsoren/silber/sumiswalder_solo_web.png';
+import sumiswalderLogo from '$lib/assets/sponsoren/silber/sumiswalder_solo_web.png?enhanced';
 import oschwaldLogo from '$lib/assets/sponsoren/silber/Zeichenfläche 1.svg';
 
 export interface Sponsor {
@@ -73,7 +73,7 @@ export const silverSponsors: Sponsor[] = [
 		url: 'https://www.sumiswalder.ch'
 	},
 	{ name: 'Oschwald AG', tier: 'silver', logo: oschwaldLogo, url: 'https://www.oschwald.ch' },
-	{ name: 'Ricardo Caceda-Suter und Familie', tier: 'silver' },
+	{ name: 'Ricardo Caceda-Suter und Familie', tier: 'silver' }
 ];
 
 export const bronzeSponsors: Sponsor[] = [
