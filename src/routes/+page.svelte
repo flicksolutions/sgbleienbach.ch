@@ -240,13 +240,19 @@
 			class="mt-8 grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] items-center gap-8 rounded-md bg-surface-50 p-2"
 		>
 			{#each goldSponsors as sponsor (sponsor.name)}
-				<a
-					href={sponsor.url ?? '#'}
-					class="flex items-center justify-center transition-opacity hover:opacity-80"
-					title={sponsor.name}
-				>
-					<img src={sponsor.logo} alt={sponsor.name} class="max-h-48 w-full object-contain" />
-				</a>
+				{#if sponsor.logo}
+					<a
+						href={sponsor.url ?? '#'}
+						class="flex items-center justify-center transition-opacity hover:opacity-80"
+						title={sponsor.name}
+					>
+						<enhanced:img
+							src={sponsor.logo}
+							alt={sponsor.name}
+							class="max-h-48 w-full object-contain"
+						/>
+					</a>
+				{/if}
 			{/each}
 		</div>
 		<a
