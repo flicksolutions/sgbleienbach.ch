@@ -11,12 +11,12 @@ jobs:
         steps:
             # Build main branch
             - name: Checkout main
-              uses: actions/checkout@v4
+              uses: actions/checkout@v6
               with:
                   ref: main
 
             - name: Install pnpm
-              uses: pnpm/action-setup@v4
+              uses: pnpm/action-setup@v6
               with:
                   version: 10
 
@@ -35,7 +35,7 @@ jobs:
 
             # Build v1 branch
             #- name: Checkout v1
-            #  uses: actions/checkout@v4
+            #  uses: actions/checkout@v6
             #  with:
             #      ref: v1
             #      clean: false
@@ -59,7 +59,7 @@ jobs:
             #      cp -r build-v1/. build/dev/
 
             - name: Upload Artifacts
-              uses: actions/upload-pages-artifact@v3
+              uses: actions/upload-pages-artifact@v5
               with:
                   path: "build/"
 
@@ -78,4 +78,4 @@ jobs:
         steps:
             - name: Deploy
               id: deployment
-              uses: actions/deploy-pages@v4
+              uses: actions/deploy-pages@v5
