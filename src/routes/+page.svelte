@@ -177,8 +177,11 @@
 				alt="Sonnenuntergang über Bleienbach"
 			/>
 		</GalleryImage>
-		<GalleryImage alt="Feldschiessen">
-			<enhanced:img src="$lib/assets/img/IMG20230604123646.webp" alt="Feldschiessen" />
+		<GalleryImage alt="Eidgenössisches Schützenfest Chur 2026">
+			<enhanced:img
+				src="$lib/assets/img/eidgenoessisches_2026/WhatsApp Image 2026-06-21 at 13.11.33 (1).jpeg"
+				alt="Eidgenössisches Schützenfest Chur 2026"
+			/>
 		</GalleryImage>
 	</Gallery>
 </section>

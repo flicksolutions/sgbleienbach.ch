@@ -1,0 +1,84 @@
+---
+layout: news
+title: Veteranen Amtscup & Jahresschiessen
+date: "2026-06-12"
+abstract: Veteranen-Wochenende mit der 2ter Amts-Cup Hauptrunde in Krauchthal und dem Jahresschiessen in Wiler Utzenstorf.
+---
+
+<script>
+import { Gallery, GalleryImage } from '$lib';
+</script>
+
+## Amtscup in Krauchthal
+
+Am Freitag 12. Juni traten wir zur 2ten Hauptrunde gegen die Oldies-Vetranenschützen von Krauchthal an. Pünktlich chauffierte uns diesmal Hans Gygax zum Schützenhaus, das wir schell fanden.
+
+Im Hinterkopf, dass sich hier in der Nähe auch der berühmt berüchtigter Thorberg befindet. Dort ist es besser den nicht langfristig als Wohnort haben zu müssen!
+
+Da wir noch hier noch nie geschossen haben, waren wir alle gespannt was uns erwartet.  Das Schüzenhaus ist gross und vor 15 Jahren neu eingerichtet worden. Sind, wie wir mit 5 Scheiben ausgestattet und der Scheibenstand ist ca. 288 Meter weit entfernt aber noch höher gelegenen als unser. Das heisst für uns entsprechende Einstellungen vorgängig am Schiessapparat  vorzunehmen.
+
+Nach dem sehr freundlich Empfang ging es zur Scheibeneinteilung, aber es konnte erst mit ca. 10 Minütiger Verspätung mit dem Feuerfrei begonnen werden. Die Sius Anzeigeanlgage liess sich einfach nicht aufstarten, trotzdem es eine neue Anlage ist! Oh sind wir froh haben wir uns für das Sintro Modell entschieden.
+
+Diesmal ging Hans voran und  eröffnete als Erster das Feuer.
+
+Die Proben waren sehr gut. Doch als es ans Läbige ging kam plötzlich wieder ein heimtückischer unberechenbarer Wind auf, so das es schwierig wurde für ihn ein gutes Resultat zu erzielen. Nachfolgend machten sich Ueli und Ernst auf die Socken. Die jungen Routiniers liessen sich von nichts aus der Ruhe bringen und erzielten ein sehr gute Resultate. Da unsere Kontrahenten auch alle gute Resultate erzielten wusste ich, dass es für mich schwer,  ja fast unmöglich sein wird hier die Kohlen noch aus dem Feuer reissen zu können. Und so kam es,wie es kommen musste, auch trotz aller Anstrengung erzielte ich ein noch nie da gewesenes schlechtes Resultat!         Das darf doch nicht wahr sein dachte ich.
+
+Krauchthal qualifizierte sich somit souverän für die dritte Runde. Gratulation.
+
+Ich wusste hier stimmt was nicht mit mir, Gewehr oder beidem! Ich musste das sofort heraus finden, denn es stehen sehr wichtige schiessen Anlässe an. Z.B. Eidg. Schützenfest in Chur.
+
+Nach dem Endefeuer wurden wir Traditiosgemäss mit einem feinen Imbiss in der grosszügig  eingerichteten Schützenstube verwöhnt. Ernst traf hier noch unverhofft einen alten Schulkollegen und konnte viele alte spannende Erinnerungen austauschen. Auf dem Nachhause fahren beglückten wir noch Maria im Restaurant Rössli mit einem wohlverdienten Schlummer-Trunk und rühmten ihre Beflaggung mit Schweizerfahnen, das uns nun an den Beginn der Fussball WM erinnerte. Hopp Schweiz!
+
+Zuhause angekommen liess es mir keine Ruhe und ich zerlegte ich meine persönliche Waffe und siehe da ich fand gegen Mitternacht eine lockere Schraube am Ringkorn, hoffte, dass das der Grund gewesen ist für die nicht so rosigen Resultaten, was sich ja am Samstag im Wiler zeigen wird.
+
+
+
+## Jahresschiessen im Wiler, Utzenstorf
+
+
+
+Freundlicherweise stellte sich Beat Mathys als Fahrer zur Verfügung für die in Bleienbacher. Danke Beat. Und wieder Hans Gygax mit Ueli Geissbühler für die Bützberger.
+
+Erfreulicherweise ehrte uns Alfred Spycher als Begleiter, wir schätzen seine Anwesenheit und sind immer froh für seine fachliche Unterstützung.
+
+Leider konnte Alfred wegen einem medizinischen Eingriff selber nicht mitmachen. Gute Besserung.
+
+Neben den zwei Stichen die man hier schiessen kann ist die Kameradschaft das aller wichtigste. Man kann hier an zwei Wochenenden fast alle Veteranen treffen von der Umgebung, interessante Gespräche führen und Erinnerungen austauschen.
+
+Alle machen hier gerne mit, weil sie schon gute Resultate erzielt haben und somit schöne Erinnerungen haben. So ist diese Veranstaltung für uns Veteranen ein sehr wertvoller Anlass.
+
+
+
+Denke dieses Wochenende war für uns Veteranen aus sportlicher Sicht eine Herausforderung und eine  kameradschaftliche Bereicherung.
+
+Vielen Dank an allen die Teilgenommen haben.
+
+
+
+
+
+_Text von Andreas Morf_
+
+
+<Gallery class="mx-auto max-w-3xl">
+
+<GalleryImage alt="Eidgenössisches Schützenfest Chur 2026">
+			<enhanced:img
+				src="$lib/assets/img/veteranenwochenende/WhatsApp Image 2026-06-15 at 00.25.51 (1).jpeg"
+				alt="Eidgenössisches Schützenfest Chur 2026"
+			/>
+            </GalleryImage>
+<GalleryImage alt="Eidgenössisches Schützenfest Chur 2026">
+			<enhanced:img
+				src="$lib/assets/img/veteranenwochenende/WhatsApp Image 2026-06-15 at 00.25.51 (2).jpeg"
+				alt="Eidgenössisches Schützenfest Chur 2026"
+			/>
+            </GalleryImage>
+<GalleryImage alt="Eidgenössisches Schützenfest Chur 2026">
+			<enhanced:img
+				src="$lib/assets/img/veteranenwochenende/WhatsApp Image 2026-06-15 at 00.25.51.jpeg"
+				alt="Eidgenössisches Schützenfest Chur 2026"
+			/>
+            </GalleryImage>
+
+            </Gallery>
