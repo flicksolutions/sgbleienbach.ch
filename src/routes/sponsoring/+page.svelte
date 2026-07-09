@@ -31,7 +31,11 @@
 					rel={sponsor.url && sponsor.url !== '#' ? 'noopener noreferrer' : undefined}
 				>
 					{#if sponsor.logo}
-						<img src={sponsor.logo} alt={sponsor.name} class="h-20 max-w-full object-contain" />
+						<enhanced:img
+							src={sponsor.logo}
+							alt={sponsor.name}
+							class="h-20 max-w-full object-contain"
+						/>
 					{/if}
 					<p class="mt-3 text-center text-sm font-medium text-secondary-800">{sponsor.name}</p>
 				</a>
@@ -53,7 +57,11 @@
 					rel={sponsor.url && sponsor.url !== '#' ? 'noopener noreferrer' : undefined}
 				>
 					{#if sponsor.logo}
-						<img src={sponsor.logo} alt={sponsor.name} class="h-14 max-w-full object-contain" />
+						<enhanced:img
+							src={sponsor.logo}
+							alt={sponsor.name}
+							class="h-14 max-w-full object-contain"
+						/>
 					{/if}
 					<p class="mt-2 text-center text-sm font-medium text-secondary-800">{sponsor.name}</p>
 				</a>
