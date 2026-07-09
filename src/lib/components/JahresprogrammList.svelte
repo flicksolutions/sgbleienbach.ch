@@ -87,7 +87,7 @@
 			>
 				<div class="flex flex-col gap-1 sm:flex-row sm:items-start sm:justify-between sm:gap-4">
 					<div>
-						<p class="font-medium text-surface-900-100">{event.category}</p>
+						<p class="font-medium text-surface-900-100">{event.title}</p>
 						{#if event.note}
 							<p class="text-sm text-surface-700-300">{event.note}</p>
 						{/if}
