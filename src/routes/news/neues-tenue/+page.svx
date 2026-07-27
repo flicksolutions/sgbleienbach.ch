@@ -1,0 +1,15 @@
+---
+layout: news
+title: Neues Tenue
+date: "2026-07-27"
+abstract: Wir haben neue Uniformen
+---
+
+<script>
+import intersport from '$lib/assets/Intersport-Ingold_Herzogenbuchsee_cmyk.svg?enhanced';
+</script>
+
+Die Vereinsmitglieder wurden mit neuen Uniformen ausgestattet. Dazu gehören ein Polo-Shirt, Softshell-Jacken und Pullover. Sie sind allein mit unserem Logo auf der Brust und dem Rücken versehen. Uns gefällt der schlichte, professionelle Look!
+
+![Logo Ingold-Sport]({intersport})
+Wir danken unserem Ausstattungsparnter [Ingold Sport AG, Herzogenbuchsee](https://ingold-sport.ch/)  für die kompetente Beratung und die prompte Lieferung just in time für das Eidgenössische Schützenfest.
