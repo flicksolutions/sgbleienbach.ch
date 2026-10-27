@@ -277,7 +277,7 @@ export const jahresprogrammEvents2026: JahresprogrammEvent[] = [
 		title: 'Ausschiessen Preisverteilung',
 		date: '2026-10-30',
 		start: '19:30',
-		location: 'Schützenhaus Bleienbach'
+		location: 'Rössli, Bleienbach'
 	},
 	{
 		id: '2026-12-26-altjahresschiessen',
