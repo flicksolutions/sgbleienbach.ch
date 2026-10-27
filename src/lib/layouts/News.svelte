@@ -1,4 +1,4 @@
-<script context="module">
+<script module>
 	import MarkdownImage from '$lib/components/MarkdownImage.svelte';
 
 	export { MarkdownImage as img };
